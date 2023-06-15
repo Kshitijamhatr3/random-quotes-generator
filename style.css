@@ -1,0 +1,130 @@
+/* Importing google font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap');
+/* color pallete = https://colorhunt.co/palette/f9f5f6f8e8eefdcedff2bed1*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #F2BED1;
+}
+.wrapper{
+    width: 605px;
+    background: #F8E8EE; 
+    /* background: #FDCEDF; */
+    border-radius: 15px;
+    padding: 30px 30px 25px;
+}
+.wrapper header{
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+}
+.wrapper .data{
+    margin: 35px 0;
+}
+
+.data .data-area{
+    display: flex;
+    justify-content: center;
+
+}
+.data-area i{
+    font-size: 20px;
+}
+.data-area i:first-child{
+ margin: 3px 10px 0 0;
+}
+.data-area i:last-child{
+    display: flex;
+    margin:0 0 3px 10px ;
+    align-items: flex-end;
+   }
+.data-area .quote{
+    font-size: 23px;
+    text-align: center;
+    word-break:break-all ;
+}
+.data .author{
+    display: flex;
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 20px;
+    justify-content: flex-end;
+}
+.author span:first-child{
+    margin: -1px 7px 0 0;
+    font-family: monospace;
+}
+.wrapper .buttons{
+  border-top: 1px solid #ccc;  
+}
+.buttons .features{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.features ul{
+    display: flex;
+}
+.features ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    cursor: pointer;
+    margin: 0 5px;
+    height: 47px;
+    width: 47px;
+    border-radius: 50%;
+    color:  rgb(226, 94, 156);
+    border: 2px solid rgb(226, 94, 156);
+    transition: all 0.3s ease;
+    
+}
+.features ul li:hover{
+    box-shadow: 0 0 10px #eb629e, 0 0 20px #eb629e, 0 0 30px #eb629e;   
+    color: #fff;
+    background: #eb629e;
+}
+.features button{
+    border: none;
+    outline: none;
+    color: rgb(0, 0, 0) ;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 13px 22px;
+    border-radius: 30px;
+    background: #F2BED1;
+}
+.features button:hover{
+    box-shadow: 0 0 10px #eb629e, 0 0 20px #eb629e, 0 0 30px #eb629e;   
+    color: #fff;
+    background: #eb629e;
+    animation: pulse 1s infinite;
+}
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+button.loading{
+    opacity: 0.7;
+    pointer-events: none;
+}
